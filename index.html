@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelería Todo Arte</title>
+  <link href="CSS/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="carritoPanel" class="carrito-panel">
+  <div class="carrito-header">
+    <h3>Mi Carrito</h3>
+    <button onclick="cerrarCarrito()">✕</button>
+  </div>
+  <div id="carritoLista" class="carrito-lista"></div>
+  <div class="carrito-footer">
+      Total: <span id="carritoTotal">$0</span>
+  </div>
+</div>
+
+<div id="carritoOverlay" class="carrito-overlay" onclick="cerrarCarrito()"></div>
+
+  <nav class="navbar">
+  <h2>Todo Arte</h2>
+  <div class="navbar-acciones">
+    <div class="carrito-icono" onclick="verCarrito()">
+      🛒
+      <span id="carritoContador" class="carrito-contador">0</span>
+    </div>
+    <button class="login-btn" onclick="openLogin()">Login</button>
+  </div>
+</nav>
+
+  <div class="banner">
+    <h1>Papelería Todo Arte</h1>
+    <p>Inspira tu creatividad con nuestros productos de papelería</p>
+  </div>
+
+  <section class="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="productos">
+      <div class="producto"><span class="tag">Nuevo</span><img src="https://panamericana.vtexassets.com/arquivos/ids/545878/cuaderno-cuadriculado-a6-4-materias-140-hojas-tapa-plastica-surtido--2-8412885096320.jpg?v=638563996219500000"><h3>Cuaderno</h3><div class="precio">$5.000</div><a href="#" class="btn">Comprar</a><button class="btn-carrito" onclick="agregarAlCarrito('Cuaderno', 5000)">+ Carrito</button></div>
+      <div class="producto"><img src="https://repilos.com/wp-content/uploads/2025/05/lapices-jumbo-hbj12-klipp-5mm-12un.jpg"><h3>Lápices</h3><div class="precio">$3.000</div><a href="#" class="btn">Comprar</a><button class="btn-carrito" onclick="agregarAlCarrito('Lapices', 3000)">+ Carrito</button></div>
+      <div class="producto"><span class="tag">Oferta</span><img src="https://exitocol.vtexassets.com/arquivos/ids/17258365/marcadores-dobles-set-de-80-colores-base-de-alcohol.jpg?v=638157295875630000"><h3>Marcadores</h3><div class="precio">$7.000</div><a href="#" class="btn">Comprar</a><button class="btn-carrito" onclick="agregarAlCarrito('Marcadores', 7000)">+ Carrito</button></div>
+      <div class="producto"><img src="https://creativeboxcolombia.com/wp-content/uploads/2020/10/resaltadores-pastel-pelikan-nin%CC%83os-regalos-papeleria.jpg"><h3>Resaltadores</h3><div class="precio">$6.000</div><a href="#" class="btn">Comprar</a><button class="btn-carrito" onclick="agregarAlCarrito('Resaltadores', 6000)">+ Carrito</button></div>
+
+    </div>
+  </section>
+
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <h3>Iniciar sesión</h3>
+      <input type="text" id="user" placeholder="Usuario">
+      <input type="password" id="pass" placeholder="Contraseña">
+      <button class="login-btn" onclick="login()">Entrar</button>
+      <p id="msg" style="color:red;"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Papelería Todo Arte</p>
+  </footer>
+
+<script src="JS/main.js"></script>
+</body>
+</html>
