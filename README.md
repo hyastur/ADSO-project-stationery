@@ -11,7 +11,7 @@ El objetivo principal es diseñar e implementar una solución web integral que p
 1. **Lado del Cliente (Frontend Público):** Una interfaz intuitiva y atractiva donde los usuarios pueden ver el catálogo de productos (útiles escolares, materiales de arte, oficina, etc.), conocer los servicios disponibles (impresiones, encuadernación) y ponerse en contacto con el negocio.
 2. **Lado del Administrador (Backend/Dashboard):** Un módulo privado para que los dueños de la papelería puedan gestionar el inventario, actualizar precios, registrar ventas y administrar los productos en stock de manera eficiente.
 
-## 🛠️ Tecnologías Utilizadas (Por definir/Personalizar)
+## 🛠️ Tecnologías Utilizadas (Por definir)
 
 *   **Frontend:** HTML5, CSS3, JavaScript.
 *   **Backend:** PHP
